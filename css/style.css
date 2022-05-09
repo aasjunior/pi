@@ -118,37 +118,7 @@ a{
     width: 500px;
 }
 
-/*OBJETIVOS
-#objetivos{
-    width: 100%;
-    background: #569d50;
-    color: #fff;
-    padding: 50px;
-}
-
-#objetivos-container{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px; /*espaçamento entre as colunas*/
-/*
-}
-
-.objetivo{
-    display: flex;
-    flex-direction: column;
-    background-color: #95d190;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.objetivo-img{
-    width: 30%;
-}
-
-*/
-
+/*OBJETIVOS*/
 #objetivos{
     width: 100%;
     background: #569d50;
@@ -192,7 +162,46 @@ a{
     border-radius: 5px;
 }
 
+/*DICAS*/
+#dicas{
+    width: 100%;
+    background: #569d50;
+    color: #fff;
+    padding: 50px;
+}
 
+#dicas-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px; /*espaçamento entre as colunas*/
+}
 
+.dica{
+    display: flex;
+    flex-direction: column;
+    background-color: #95d190;
+    padding: 20px;
+    border-radius: 5px;
+}
 
+.dica-img{
+    width: 100%;
+}
 
+.dica h3{
+    margin: 10px;
+}
+
+.dica p{
+    margin: 10px;
+}
+
+/*Footer*/
+#rodape{
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
