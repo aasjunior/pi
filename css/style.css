@@ -31,6 +31,7 @@ a{
     background: #4da046;
     color: #eee;
     position: fixed;
+    z-index: 11;
 }
 
 #menu-container{
@@ -104,7 +105,6 @@ a{
 }
 
 #sobre-card{
-    border: 1px solid #000;
     width: 500px;
     height: auto;
     display: flex;
@@ -162,6 +162,96 @@ a{
     border-radius: 5px;
 }
 
+/*RESULTADOS*/
+#resultados{
+    width: 100%;
+    background: #dbebd9;
+    color: #111;
+    padding: 50px;
+}
+
+#resultados-container{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultados-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 60px 60px;
+}
+
+.resultados-nav label{
+    bottom: 0;
+    width: 25px;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.slider{
+    display: block;
+    height: 293px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li{
+    list-style: none;
+    position: absolute;
+    display: flex;    
+}
+
+.slider img{
+    margin: auto;
+    width: 60%;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+
+.slider li:nth-child(2) label{
+    left: 40px;
+}
+
+.slider li:nth-child(3) label{
+    left: 70px;
+}
+
+.slider img{
+    opacity: 0;
+    visibility: hidden;
+}
+.slider p{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.slider li input:checked ~ p{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
 /*DICAS*/
 #dicas{
     width: 100%;
@@ -199,6 +289,27 @@ a{
 }
 
 /*Footer*/
+#links{
+    width: 100%;
+    background: #333;
+    color: #eee;
+    padding: 50px;
+}
+
+#links-container{
+    display: grid; /**/
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas. Cada coluna ocupam 1 fração do elemento pai */
+    justify-items: center;
+    padding: 15px;
+    border: 1px solid #fff;
+    justify-content: space-around;
+}
+
+#links-container aside{
+    border: 1px solid #eee;
+}
+
+
 #rodape{
     background: #222;
     color: #eee;

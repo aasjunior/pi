@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px){
+
+    /*MENU*/
+    #menu{
+        height: 260px;
+        position: static;
+        opacity: 0.9;
+    }
+
+    #menu-container{        
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    #menu-ancoras{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-ancoras li:nth-child(2){
+        border-top: 1px solid #a3d5a9;
+    }
+    #menu-ancoras li:nth-child(3){
+        border-top: 1px solid #a3d5a9;
+        border-bottom: 1px solid #a3d5a9;
+    }
+
+    /*SOBRE*/
+    #sobre-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre-card{
+        width: 80%;
+    }
+
+    .sobre-image{
+        width: 100%;
+    }
+
+    /*RESULTADOS*/
+    .slider li{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider li p{
+        padding-bottom: 20px;
+    }
+
+    .slider li img{
+        width: 100%;
+    }
+
+    /*DICAS*/
+    #dicas-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #dicas-container .dica:nth-child(2){
+        margin: 15px 0;
+    }
+
+    .dica-img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
