@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+/*Variaveis*/
+:root{
+
+    /*Paleta de Cores*/
+    --cor-menu:  #4da046;
+    --cor-cabecalho: #4da046;
+    --cor-objetivos: #569d50;
+    --cor-objetivo: #95d190;
+    --cor-resultados: #dbebd9;
+    --cor-dicas: #569d50;
+    --cor-dica: #95d190;
+    --cor-links: #333;
+    --cor-rodape: #222;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +31,10 @@ a{
     color: inherit; /*herda cor de fonte do elemento pai*/
 }
 
+ul{
+    list-style: none;
+}
+
 .titulo{
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -28,7 +48,7 @@ a{
 #menu{
     width: 100%;
     height: 55px;
-    background: #4da046;
+    background: var(--cor-menu);
     color: #eee;
     position: fixed;
     z-index: 11;
@@ -59,12 +79,12 @@ a{
 }
 
 #cabecalho{
-    height: 100vh; /*100% da visão da altura do viewport*/
+    height: 80vh; /*100% da visão da altura do viewport*/
     display: flex;
     justify-content: center;
     align-items: center;
     color: #eee;
-    background:  #4da046;
+    background: var(--cor-cabecalho);
     
     /*COLOCAR IMAGEM 
     
@@ -121,7 +141,7 @@ a{
 /*OBJETIVOS*/
 #objetivos{
     width: 100%;
-    background: #569d50;
+    background: var(--cor-objetivos);
     color: #fff;
     padding: 50px;
 }
@@ -141,12 +161,11 @@ a{
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
-    background: #95d190;
+    background: var(--cor-objetivo);
     border-radius: 5px;
 }
 
 .objetivo aside{
-    
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -165,7 +184,7 @@ a{
 /*RESULTADOS*/
 #resultados{
     width: 100%;
-    background: #dbebd9;
+    background: var(--cor-resultados);
     color: #111;
     padding: 50px;
 }
@@ -271,7 +290,7 @@ a{
 .dica{
     display: flex;
     flex-direction: column;
-    background-color: #95d190;
+    background-color: var(--cor-dica);
     padding: 20px;
     border-radius: 5px;
 }
@@ -291,7 +310,8 @@ a{
 /*Footer*/
 #links{
     width: 100%;
-    background: #333;
+    background: var(--cor-links);
+    background-blend-mode: color;
     color: #eee;
     padding: 50px;
 }
@@ -301,17 +321,11 @@ a{
     grid-template-columns: repeat(4, 1fr); /* 4 colunas. Cada coluna ocupam 1 fração do elemento pai */
     justify-items: center;
     padding: 15px;
-    border: 1px solid #fff;
     justify-content: space-around;
 }
 
-#links-container aside{
-    border: 1px solid #eee;
-}
-
-
 #rodape{
-    background: #222;
+    background: var(--cor-rodape);
     color: #eee;
     padding: 30px;
     text-align: center;

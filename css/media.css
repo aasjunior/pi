@@ -25,6 +25,8 @@
         border-bottom: 1px solid #a3d5a9;
     }
 
+
+
     /*SOBRE*/
     #sobre-container{
         flex-direction: column;
@@ -33,6 +35,10 @@
 
     #sobre-card{
         width: 80%;
+    }
+
+    .titulo{
+        font-size: 1.3rem;
     }
 
     .sobre-image{
@@ -67,5 +73,14 @@
         width: 100%;
         height: auto;
     }
-    
+
+    #links-container{
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #links-container aside{
+        margin-bottom: 15px;
+    }
 }
