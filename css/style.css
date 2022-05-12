@@ -9,7 +9,7 @@
     --cor-cabecalho: #4da046;
     --cor-objetivos: #569d50;
     --cor-objetivo: #95d190;
-    --cor-resultados: #dbebd9;
+    --cor-resultados: #eee;
     --cor-dicas: #569d50;
     --cor-dica: #95d190;
     --cor-links: #333;
@@ -186,7 +186,8 @@ ul{
     width: 100%;
     background: var(--cor-resultados);
     color: #111;
-    padding: 50px;
+    padding: 60px;
+    padding-bottom: 120px;
 }
 
 #resultados-container{
@@ -207,7 +208,7 @@ ul{
     bottom: 0;
     width: 25px;
     margin: 6px;
-    border-radius: 5px;
+    border-bottom: 1px solid #eee;
     cursor: pointer;
     transition: .4s;
     display: flex;
@@ -218,9 +219,9 @@ ul{
 .slider{
     display: block;
     height: 293px;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 15px;
     position: relative;
 }
 
@@ -231,7 +232,7 @@ ul{
 }
 
 .slider img{
-    margin: auto;
+    margin: auto 15px;
     width: 60%;
 }
 
@@ -265,10 +266,15 @@ ul{
     visibility: visible;
     z-index: 10;
 }
-.slider li input:checked ~ p{
+.slider li input:checked ~ div p{
     opacity: 1;
     visibility: visible;
     z-index: 10;
+}
+
+.slide-texto{
+    display: flex;
+    flex-direction: column;
 }
 
 /*DICAS*/
