@@ -25,7 +25,26 @@
         border-bottom: 1px solid #a3d5a9;
     }
 
+    #header-container{
+        width: 90%;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .header-container-left{
+        width: 90%;
+        padding: 0;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+    .header-container-right{
+        width: 90%;
+        align-self: center;
+    }
+    .header-container-right img{
+        width: 100%;
+    }
 
     /*SOBRE*/
     #sobre-container{
@@ -43,6 +62,33 @@
 
     .sobre-image{
         width: 100%;
+    }
+
+    /**/
+
+    #objetivos{
+        padding: 0;
+    }
+
+    #objetivos-container{
+        width: 100%;
+    }
+    
+    .objetivo{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .objetivo aside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .objetivo-img{
+        margin-top: 15px;
+        align-self: center;
     }
 
     /*RESULTADOS*/
