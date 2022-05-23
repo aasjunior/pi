@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>ODS 3 - Saúde e Bem Estar</title>
 </head>
 <body>
@@ -38,9 +40,8 @@
         <div class="titulo">Objetivo de Desenvolvimento Sustentável 3</div>
         <div id="sobre-container"> 
             <div id="sobre-card">
-                <h2>Saúde e Bem Estar</h2>
-                <p>Objetivo 3: Assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades
-                    O ODS 3 tem seu foco principal na saúde da população. Por isso, apresenta metas voltadas ao bem estar público.</p>
+                <h2>Saúde e Bem Estar</h2>          
+                <p>Saúde e Bem Estar é um dos Objetivos de Desenvolvimento Sustentável (ODS). O tópico propõe metas que procuram garantir uma vida saudável para pessoas de todas as idades. Para isso, um sistema de saúde único e de qualidade é essencial.</p>
             </div>
             <id id="sobre-card">
                 <img src="imgs/sobre_img1.png" alt="" class="sobre-image">
@@ -52,14 +53,13 @@
     <section id="objetivos">
         <div class="titulo">Objetivos</div>
         <div id="objetivos-container">
+            <p>
+            O ODS 3 tem como principal objetivo assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades, tendo seu foco principal na saúde da população. Por isso, apresenta metas voltadas ao bem estar público.</p>
             <div class="objetivo">
                 <img src="imgs/icon_mother.png" class="objetivo-img" alt="Mother icons created by photo3idea_studio - Flaticon">
                 <!--<a href="https://www.flaticon.com/free-icons/mother" title="mother icons">Mother icons created by photo3idea_studio - Flaticon</a>-->
                 <aside>
-                    <p>3.1 Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos</p>
-                    <blockquote>
-                        <p>No Brasil, conforme dados registrados no Painel de Monitoramento da Mortalidade Materna, em 2021, o País teve média de 107 mortes a cada 100 mil nascimentos.</p>
-                    </blockquote>
+                    <p>3.1 Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos</p> 
                     <p>3.2 Até 2030, acabar com as mortes infantis evitáveis de recém-nascidos e crianças menores de 5 anos, com todos os países objetivando reduzir a mortalidade neonatal para pelo menos 12 por 1.000 nascidos vivos e a mortalidade de crianças menores de 5 anos para pelo menos 25 por 1.000 nascidos vivos</p>
                 </aside>
             </div>
@@ -122,33 +122,163 @@
                 <li>
                     <input type="radio" class="slide" id="slide1" name="slide" checked>
                     <div class="slide-texto">
-                        <p>
-                            Na alteração da meta considerou-se que o Brasil já observa valores abaixo da meta global. Em 2015 a Razão de Mortalidade Materna (RMM) foi estimada em 62 óbitos por 100.000 nascidos vivos. No dia 28 de maio de 2018, em reunião da Comissão Nacional de combate à Mortalidade Materna e lançamento da Semana Nacional de Mobilização pela Saúde das Mulheres, o Ministério da Saúde assumiu a meta de redução de 51,7% da RMM até 2030, que corresponde a 30 mortes maternas por 100.000 nascidos vivos.
-                        </p>
+                        <blockquote cite="https://medicinasa.com.br/mortalidade-materna/">
+                            <p>No dia 28 de maio de 2018, em reunião da Comissão Nacional de combate à Mortalidade Materna e lançamento da Semana Nacional de Mobilização pela Saúde das Mulheres, o Ministério da Saúde assumiu a meta de redução  para 30 mortes maternas por 100.000 nascidos vivos.</p>
+                            <p>Porém, conforme dados registrados no Painel de Monitoramento da Mortalidade Materna em 2021, em decorrência da pandêmia da Covid-19 o País teve média de 107 mortes a cada 100 mil nascimentos.</p>
+                        </blockquote>
                     </div>
-                    <img src="imgs/indicador_3-1-1.png" />
+                    <figure>
+                        <img src="imgs/indicador_3-1-1.png" data-bs-toggle="modal" data-bs-target="#modal1"/>
+                        <figcaption>Indicador 3.1.1 2018</figcaption>
+                    </figure>
                 </li>
                 <li>
-                    <input type="radio" id="slide2" name="slide" checked>
+                    <input type="radio" id="slide2" name="slide">
                     <div class="slide-texto">
-                        <p>A meta foi ampliada porque o Brasil já atingiu os valores previstos pela ONU.</p>
-                        <p>Os alvos a serem atingidos na meta ora proposta foram definidos pelo Ministério da Saúde. As estimativas foram feitas a partir de série histórica de 2000 a 2015, e com projeção de redução (%) para 2030. Elas foram estabelecidas a partir de subsídios das áreas de Saúde da Mulher e de Saúde da Criança, que avaliam os cenários de acordo com as políticas e recursos disponíveis, e com a adição de novos recursos considerados viáveis.</p><p>Para a Taxa de Mortalidade Neonatal (menos de 28 dias de nascido) foi estimada uma redução de 43,7%, que aponta para uma taxa de mortalidade de 5,3 por 1.000 nascidos vivos (redução anual de 3,8%); no caso da Taxa de Mortalidade na Infância (menores de 5 anos de idade) foi estimada uma redução de 47,4%, que aponta para uma taxa de mortalidade de 8,3 por 1.000 nascidos vivos (redução anual de 4,2%).</p>
+                        <blockquote>
+                            <p>No Brasil, a meta foi alterada visando reduzir a mortalidade neonatal para no máximo cinco a cada 1.000 nascidos vivos e a mortalidade de crianças menores de 5 anos para oito a cada 1.000 nascidos vivos.</p>
+                            <p></p>
+                        </blockquote>
                     </div>
-                    <img src="imgs/indicador_3-2-1.png" />
+                    <figure><img src="imgs/indicador_3-2-1.png" data-bs-toggle="modal" data-bs-target="#modal2"/></figure>
                 </li>
                 <li>
-                    <input type="radio" id="slide3" name="slide" checked>
+                    <input type="radio" id="slide3" name="slide">
                     <div class="slide-texto">
                         <p>
                             A redação foi ajustada para dar ênfase às doenças mais pertinentes à realidade brasileira. Assim, o Grupo de Trabalho julgou adequado focar nas hepatites virais e incluir as arboviroses transmitidas pelo aedes aegypti, que são recorrentes. Adicionalmente, considerou-se que acabar não é um termo adequado para estas doenças. Por exemplo, acabar com a dengue exigiria a erradicação do aedes aegypti, mas essa é uma tarefa inviável. O que é possível fazer, com um trabalho rotineiro e a colaboração de toda a sociedade e do poder público, é controlar a disseminação do vírus. Assim, o Grupo de Trabalho sugeriu acrescentar o termo "como problema de saúde pública" para que fique claro que o objetivo é reduzir e controlar a ocorrência dessas doenças.
                         </p>
                     </div>
-                    <img src="imgs/indicador_3-3-1.png" />
+                    <figure><img src="imgs/indicador_3-3-1.png" data-bs-toggle="modal" data-bs-target="#modal3"/></figure>
                 </li>
             </ul>
+            <!-- The Modal -->
+            <div class="modal" id="modal1" style="margin-top: 60px; padding: 0; width: 100vw;">
+                <div class="modal-dialog" style="margin: 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                    <div class="modal-content" style="margin: 0;">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Indicador 3.1 - Razão de mortalidade materna</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p> Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos</p>
+                            <figure style="width: 90%; margin-left: 5%; visibility: visible;">
+                                <img src="imgs/indicador_3-1-1.png" alt="" style="width: 100%;">
+                                <figcaption>Indicador 3.1.1</figcaption> 
+                            </figure>
+                        </div>
+                
+                        <!-- Modal footer 
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>-->
+                
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="modal2" style="margin-top: 60px; padding: 0; width: 100vw;">
+                <div class="modal-dialog" style="margin: 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                    <div class="modal-content" style="margin: 0;">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Indicador 3.2 - Taxa de Mortalidade Neonatal</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>Até 2030, acabar com as mortes evitáveis de recém-nascidos e crianças menores de 5 anos, com todos os países objetivando reduzir a mortalidade neonatal para pelo menos 12 por 1.000 nascidos vivos e a mortalidade de crianças menores de 5 anos para pelo menos 25 por 1.000 nascidos vivos</p>
+                            <figure style="width: 90%; margin-left: 5%; visibility: visible;">
+                                <img src="imgs/indicador_3-2-1.png" alt="" style="width: 100%;">
+                                <figcaption>Indicador 3.2</figcaption> 
+                            </figure>
+                        </div>
+                
+                        <!-- Modal footer 
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>-->
+                
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="modal3" style="margin-top: 60px; padding: 0; width: 100vw;">
+                <div class="modal-dialog" style="margin: 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                    <div class="modal-content" style="margin: 0;">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Indicador 3.3 - Incidência de tuberculose por 100.000 habitantes</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>Até 2030, acabar com as epidemias de AIDS, tuberculose, malária e doenças tropicais negligenciadas, e combater a hepatite, doenças transmitidas pela água, e outras doenças transmissíveis</p>
+                            <figure style="width: 90%; margin-left: 5%; visibility: visible;">
+                                <img src="imgs/indicador_3-3-1.png" alt="" style="width: 100%;">
+                                <figcaption>Indicador 3.3.1</figcaption> 
+                            </figure>
+                        </div>
+                
+                        <!-- Modal footer 
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>-->
+                
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+
+    <section id="sus">
+        <div class="sus-container">
+            <div class="sus-container-left">
+                <h2>O SUS e a Saúde no Brasil</h2>
+                <p>O Sistema único de Saúde (SUS), foi instituido pela Constituição Federal de 1988 que classificou a saúde como um direito de todos e dever do Estado, sendo regulado pela Lei nº .8.080/1990. Considerado um dos maiores sistemas públicos de saúde existentes, o SUS é descrito pelo Ministério da Saúde como “um sistema ímpar no mundo, que garante acesso integral, universal e igualitário à população brasileira, do simples atendimento ambulatorial aos transplantes de órgãos”.</p>
+            </div>
+            <div class="sus-container-right">
+                <img src="imgs/medical_team_5421108.png" class="sus-img">
+            </div>
+            <div class="sus-container-bottom">
+                <h3>Principios Básicos</h3>
+                <p>Art. 7º As ações e serviços públicos de saúde e os serviços privados contratados ou conveniados que integram o Sistema Único de Saúde (SUS), são desenvolvidos de acordo com as diretrizes previstas no art. 198 da Constituição Federal, obedecendo ainda aos seguintes princípios:</p>
+                <ol>
+                    <li><b>Universalidade de acesso</b> aos serviços de saúde em todos os níveis de assistência;</li>
+                    <li><b>Integralidade de assistência</b>, entendida como conjunto articulado e contínuo das ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema;</li>
+                    <li><b>Preservação da autonomia</b> das pessoas na defesa de sua integridade física e moral;</li>
+                    <li><b>Igualdade da assistência</b> à saúde, sem preconceitos ou privilégios de qualquer espécie;</li>
+                    <li><b>Direito à informação</b>, às pessoas assistidas, sobre sua saúde;</li>
+                    <li><b>Divulgação de informações</b> quanto ao potencial dos serviços de saúde e a sua utilização pelo usuário;</li>
+                    <li>Utilização da <b>epidemiologia</b> para o <b>estabelecimento de prioridades</b>, a alocação de recursos e a orientação programática;</li>
+                    <li><b>Participação da comunidade;</b></li>
+                    <li>Descentralização político-administrativa, com <b>direção única</b> em cada esfera de governo:
+                        <ol>
+                            <li>Ênfase na <b>descentralização</b> dos serviços para os municípios;</li>
+                            <li><b>Regionalização e hierarquização</b> da rede de serviços de saúde;</li>
+                        </ol>
+                    </li>
+                    <li>Integração em nível executivo das <b>ações de saúde, meio ambiente</b> e <b>saneamento básico</b>;</li>
+                    <li>Conjugação dos recursos financeiros, tecnológicos, materiais e humanos da União, dos Estados, do Distrito Federal e dos Municípios na prestação de serviços de assistência à saúde da população;</li>
+                    <li>Capacidade de <b>resolução dos serviços</b> em todos os níveis de assistência;</li>
+                    <li>Organização dos serviços públicos de modo a <b>evitar duplicidade</b> de meios para fins idênticos.</li>
+                </ol>                  
+            </div>
+            <div class="sus-card">
+            </div>
+            <div class="sus-card">
+            </div>
+        </div>      
+    </section>
     <!--DICAS-->
     <section id="dicas">
         <div class="titulo">Dicas</div>

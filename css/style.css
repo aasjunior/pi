@@ -27,7 +27,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-a{
+body a{
     text-decoration: none;
     color: inherit; /*herda cor de fonte do elemento pai*/
 }
@@ -54,7 +54,7 @@ ul{
     font-size: 1.1rem;
     position: fixed;
     z-index: 11;
-}
+}   
 
 #menu-container{
     width: 80%;
@@ -74,6 +74,7 @@ ul{
 
 #menu-ancoras li{
     padding: 10px;
+    margin-top: 15px;
 }
 
 #menu-ancoras li a:hover{
@@ -167,6 +168,15 @@ ul{
     font-size: 1.2rem;
 }
 
+#sobre-card h2{
+    margin-bottom: 30px;
+}
+
+#sobre-card p{
+    text-indent: 16px;
+    margin-bottom: 15px;
+}
+
 .sobre-image{
     width: 500px;
 }
@@ -187,29 +197,39 @@ ul{
     flex-direction: column;
 }
 
+#objetivos-container > p{
+    width: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
 .objetivo{ 
-    width: 90%;
+    width: 100%;
     padding: 30px;
     margin: 15px 0;
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
     background: var(--cor-objetivo);
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .objetivo aside{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
 
 .objetivo aside p{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .objetivo aside blockquote{
-    padding: 0 5px 5px;
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 0 10px 5px;
+    background-color: #a5d6a1;
     border-left: 2px solid #4da046;
     font-size: 1rem;
 }
@@ -230,7 +250,7 @@ ul{
     background: var(--cor-resultados);
     color: #111;
     padding: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
 }
 
 #resultados-container{
@@ -265,9 +285,10 @@ ul{
 }
 
 .slider{
-    display: block;
-    height: 293px;
+    display: flex;
+    height: 400px;
     width: 100%;
+    padding-top: 15px;
     margin: auto;
     margin-top: 15px;
     position: relative;
@@ -279,9 +300,14 @@ ul{
     display: flex;    
 }
 
-.slider img{
+.slider figure{
     margin: auto 15px;
+    padding: 0;
     width: 60%;
+}
+
+.slider figure img{
+    width: 100%;
 }
 
 .slider input{
@@ -300,7 +326,7 @@ ul{
     left: 70px;
 }
 
-.slider img{
+.slider figure{
     opacity: 0;
     visibility: hidden;
 }
@@ -309,7 +335,7 @@ ul{
     visibility: hidden;
 }
 
-.slider li input:checked ~ img{
+.slider li input:checked ~ figure{
     opacity: 1;
     visibility: visible;
     z-index: 10;
@@ -321,47 +347,100 @@ ul{
 }
 
 .slide-texto{
+    width: 40%;
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
 }
 
 #sus{
     width: 100%;
-    height: 800px;
-    background: var(--cor-sus);
+    /*display: flex;
+    justify-content: center;*/
+    background: var(--cor-resultados);
     color: #eee;
     padding: 60px;
     padding-bottom: 120px;
+    
 }
 
-.sus-container{
-    width: 90vw;
+/*.sus-container{
+    width: 100%;
+    padding: 60px;
+    border-radius: 90px;
+    background: var(--cor-sus);
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
+.sus-container{
+    width: 100%;
+    padding: 60px;
+    border-radius: 90px;
+    background: var(--cor-sus);
+    margin: auto;
+    display: grid;
+    grid-template-areas: "1 r" "f f";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+  
 .sus-container-left{
-    width: 30%;
+    padding: 60px;
 }
 
 .sus-container-left h2{
     font-size: 2.5rem;
+    margin-bottom: 60px;
 }
 
-.sus-container-right{
-    width: 60%;
+.sus-container-left p{
+    margin-bottom: 60px;
+}
 
+.sus-container-bottom{
+    width: 80%;
+    margin-left: 60px;
+    grid-area: f;
 }
 
 .sus-img{
-    width: 80%;
-    height: 200px;
-    background: url('../imgs/sus.jpg') no-repeat center center/contain;
+    width: 100%;
+    /*background: url('../imgs/medical_team_5421108.png') no-repeat center center/contain;/*<a href='https://.pngtree.com/so/Equipe'>Equipe png de .pngtree.com/</a>*/
+    
 }
 
+#sus ol{
+    list-style-type: upper-roman;
+    line-height: 20px;
+    list-style-position: inside;
+}
+
+#sus ol li{
+    margin-bottom: 15px;
+}
+
+#sus ol li ol{
+    margin-top: 15px;
+    line-height: 20px;
+    list-style-type: lower-alpha;
+}
+
+.sus-card{
+    /*bottom: -280px;*/
+    width: 50%;
+    padding: 30px;
+    /*margin-top: -220px;
+    margin-bottom: 120px;*/
+    background: #569d50;
+    border-radius: 20px;
+    position: relative;
+}
 
 /*DICAS*/
 #dicas{
@@ -421,7 +500,13 @@ ul{
     margin: 0px 100px 0px 60px;
 }
 
-#links-container aside li{
+
+#links-container aside ul{
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+#links-container aside ul li{
     margin-bottom: 5px;
 }
 
@@ -445,7 +530,11 @@ ul{
 #rodape{
     background: var(--cor-rodape);
     color: #eee;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 30px;
     text-align: center;
+}
+
+#rodape p{
+    margin: 0;
 }

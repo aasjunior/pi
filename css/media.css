@@ -109,6 +109,28 @@
         width: 100%;
     }
 
+    /*SUS*/
+    #sus{
+        padding: 0 0 120px;
+    }
+
+    .sus-container{
+        padding: 0 0 60px;
+        display: flex;
+        flex-direction: column;
+        
+        justify-items: center;
+    }
+
+    .sus-container-right{
+        width: 80%;
+        justify-items: center;
+    }
+    .sus-img{
+        width: 100%;
+    }
+
+
     /*DICAS*/
     #dicas-container{
         width: 100%;
