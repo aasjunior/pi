@@ -2,19 +2,19 @@
 
     /*MENU*/
     #menu{
-        height: 260px;
+        height: auto;
         position: static;
         opacity: 0.9;
     }
 
     #menu-container{        
         flex-direction: column;
-        padding: 20px 0;
+        justify-content: center;
     }
 
     #menu-ancoras{
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     #menu-ancoras li:nth-child(2){
@@ -94,7 +94,18 @@
     /*RESULTADOS*/
 
     #resultados{
-        height: 115vh;
+        padding-bottom: 50%;
+    }
+
+    #resultados-container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .slider{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10vh;
     }
     .slider li{
         flex-direction: column;
@@ -105,7 +116,11 @@
         padding-bottom: 20px;
     }
 
-    .slider li img{
+    .slider li figure{
+        width: 100%;
+    }
+
+    .slide-texto{
         width: 100%;
     }
 
@@ -149,9 +164,9 @@
     }
 
     #links-container{
-        display: inline-block;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 
     #links-container aside{

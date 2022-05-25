@@ -489,9 +489,11 @@ ul{
 }
 
 #links-container{
+    max-width: 100%;
     display: flex;
     /*display: grid;*/
     /*grid-template-columns: repeat(3, 1fr); /* 4 colunas. Cada coluna ocupam 1 fração do elemento pai */
+    flex-direction: row;
     justify-content: left;
     padding: 15px;
 }
