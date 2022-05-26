@@ -214,7 +214,7 @@ ul{
 
 .sobre-container-bottom{
     width: 80%;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 12px 60px;
     grid-area: f;
     display: flex;
@@ -229,7 +229,7 @@ ul{
 
 .sobre-container-bottom blockquote{
     width: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 0 10px 5px;    
     border-left: 2px solid #4da046;
     font-size: 1rem;
