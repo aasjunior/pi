@@ -310,11 +310,10 @@ ul{
     background: var(--cor-resultados);
     color: #111;
     padding: 60px;
-    padding-bottom: 60px;
 }
 
 #resultados-container{
-    width: 80vw;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -331,7 +330,7 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 60px 60px;
+    margin: 0 30px 30px;
 }
 
 .resultados-nav label{
@@ -346,16 +345,24 @@ ul{
     z-index: 1;
 }
 
+.resultados-nav label:hover{
+    font-size: 1.1rem;
+    border-bottom: 3px solid #4da046;
+}
+
+.resultados-nav label:active{
+    border-bottom: 3px solid #4da046;;
+}
+
 .slider li input:checked ~ a{
     border-bottom: 1px solid #569d50;
 }
 
 .slider{
     display: flex;
-    height: 400px;
+    height: 600px;
     width: 100%;
     padding-top: 15px;
-    margin: auto;
     margin-top: 15px;
     position: relative;
 }
@@ -368,12 +375,25 @@ ul{
 
 .slider figure{
     margin: auto 15px;
-    padding: 0;
-    width: 60%;
+    width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 60px;
+    cursor: pointer;
 }
 
 .slider figure img{
-    width: 100%;
+    width: 550px;
+    border-radius: 40px;
+    align-self: center;
+}
+.slider figure img{
+    width: 550px;
+    border-radius: 40px;
+    align-self: center;
 }
 
 .slider input{
@@ -401,6 +421,16 @@ ul{
     visibility: hidden;
 }
 
+.slider h3{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider cite{
+    opacity: 0;
+    visibility: hidden;
+}
+
 .slider li input:checked ~ figure{
     opacity: 1;
     visibility: visible;
@@ -412,11 +442,28 @@ ul{
     z-index: 10;
 }
 
+.slider li input:checked ~ div h3{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider li input:checked ~ div cite{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
 .slide-texto{
-    width: 40%;
+    width: 60%;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.slide-texto h3{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 #sus{
@@ -465,7 +512,7 @@ ul{
 }
 
 .sus-container-left p{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .sus-container-bottom{
@@ -498,6 +545,10 @@ ul{
 
 .sus-programas{
     margin: 60px 0;
+}
+
+.sus-programas h2{
+    margin-bottom: 60px;
 }
 
 .sus-programas div{
