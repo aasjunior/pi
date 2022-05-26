@@ -153,12 +153,26 @@ ul{
     padding: 50px;
 }
 
-#sobre-container{
+/*#sobre-container{
     display: flex;
     justify-content: center;
+}*/
+
+#sobre-container{
+    width: 100%;
+    padding: 60px;
+    display: grid;
+    grid-template-areas: "1 r" "f f";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    vertical-align: top;
+    font-size: 1.2rem;
+    border: 1px solid #000;
 }
 
-#sobre-card{
+
+/*#sobre-card{
     width: 500px;
     height: auto;
     display: flex;
@@ -166,20 +180,67 @@ ul{
     padding: 10px;
     margin: 15px 0;
     font-size: 1.2rem;
+}*/
+
+#sobre-container-left{
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+    margin: 15p x 0;
+    font-size: 1.2rem;
+    border: 1px solid #000;
 }
 
-#sobre-card h2{
-    margin-bottom: 30px;
+#sobre-container-right{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    border: 1px solid #000;
 }
 
-#sobre-card p{
-    text-indent: 16px;
+#sobre h2{
+    margin-bottom: 60px;
+}
+
+#sobre p{
     margin-bottom: 15px;
 }
 
 .sobre-image{
     width: 500px;
 }
+
+.sobre-container-bottom{
+    width: 80%;
+    margin-top: 60px;
+    padding: 12px 60px;
+    grid-area: f;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-container-bottom img{
+    width: 120px;
+    height: min-content;
+    margin-right: 60px;
+}
+
+.sobre-container-bottom blockquote{
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 0 10px 5px;    
+    border-left: 2px solid #4da046;
+    font-size: 1rem;
+}
+
+.sobre-container-bottom blockquote p{
+    margin-top: 10px;
+}
+
+
 
 /*OBJETIVOS*/
 #objetivos{
@@ -358,9 +419,9 @@ ul{
     /*display: flex;
     justify-content: center;*/
     background: var(--cor-resultados);
-    color: #eee;
     padding: 60px;
     padding-bottom: 120px;
+    border: 1px solid #000;
     
 }
 
@@ -381,6 +442,7 @@ ul{
     padding: 60px;
     border-radius: 90px;
     background: var(--cor-sus);
+color: #eee;
     margin: auto;
     display: grid;
     grid-template-areas: "1 r" "f f";
