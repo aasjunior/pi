@@ -10,7 +10,7 @@
     --cor-objetivos:#569d50;/* #569d50*/
     --cor-objetivo: #95d190; /*#95d190*/
     --cor-resultados: #eee;
-    --cor-sus: #9ac996;
+    --cor-sus: #569d50;/*9ac996*/
     --cor-dicas: #569d50;
     --cor-dica: #95d190;
     --cor-links: #333;
@@ -116,7 +116,7 @@ ul{
     margin: 15px 0;
     line-height: 20px;
     max-width: 500px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .header-container-left{
@@ -245,7 +245,7 @@ ul{
 #objetivos{
     width: 100%;
     background: var(--cor-objetivos);
-    color: #fff;
+    color: #eee;
     padding: 50px;
 }
 
@@ -270,6 +270,7 @@ ul{
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
+    color: #222;
     background: var(--cor-objetivo);
     border-radius: 15px;
 }
@@ -471,6 +472,7 @@ ul{
     /*display: flex;
     justify-content: center;*/
     background: var(--cor-resultados);
+    color: #FFF;
     padding: 0 60px;
     padding-bottom: 120px;
 }
@@ -558,8 +560,8 @@ ul{
 /*DICAS*/
 #dicas{
     width: 100%;
-    background: #569d50;
-    color: #fff;
+    background: var(--cor-dicas);
+    color: #eee;
     padding: 50px;
 }
 
@@ -575,6 +577,7 @@ ul{
     display: flex;
     flex-direction: column;
     background-color: var(--cor-dica);
+    color: #333;
     padding: 20px;
     border-radius: 20px;
 }
